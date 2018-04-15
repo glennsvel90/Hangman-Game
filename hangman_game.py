@@ -4,19 +4,19 @@ import sys
 
 
 #make a list of words
-words = ["samantha",
-"sarah",
-"sophie",
-"sariah","sunny",
-"serena", "shereen",
-"sherese",
-"stephanie",
-"shaleeza",
-"shaleema",
-"shabanna",
-"stella",
-"sophia",
-"selena"]
+words = ["guide",
+"ultimate",
+"delete",
+"slides","sunny",
+"repository", "request",
+"setting",
+"explore",
+"wisdom",
+"apple",
+"banana",
+"cobra",
+"tentacles",
+"waterfall"]
 
 
 def clear():
