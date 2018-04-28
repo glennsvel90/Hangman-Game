@@ -20,6 +20,8 @@ words = ["guide",
 
 
 def clear():
+	""" clear the terminal """
+	
 	if os.name == 'nt':
 		os.system('cls')
 	else:
@@ -27,6 +29,8 @@ def clear():
 
 
 def draw(wrong_guesses,right_guesses,random_word):
+	""" Make appear the strikes and blank word line spaces """
+	
 	clear()
 	print('Strikes: {}/7'.format(len(wrong_guesses)))
 	print ('')
@@ -42,6 +46,8 @@ def draw(wrong_guesses,right_guesses,random_word):
 
 
 def get_guess(wrong_guesses,right_guesses):
+	""" return the guess """
+	
 	while True:
 		guess= input("Guess a letter: ").lower()
 		if len(guess) != 1:
@@ -55,6 +61,8 @@ def get_guess(wrong_guesses,right_guesses):
 
 
 def play(done):
+	""" Start the game loop """
+	
 	clear()
 	random_word = random.choice(words)
 	wrong_guesses = []
@@ -90,6 +98,8 @@ def play(done):
 
 
 def welcome():
+	""" Introduce the directions """
+	
 	start = input("Press enter/return to start, or enter Q to quit ").lower()
 	if start == "q":
 		print ("Bye Bye! Hope you come back and play!")
